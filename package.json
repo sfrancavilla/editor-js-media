@@ -1,15 +1,15 @@
 {
-  "name": "@editorjs/image",
-  "version": "2.9.3",
+  "name": "@sfrancavilla/editor-js-media",
+  "version": "1.0.0",
   "keywords": [
-    "codex editor",
     "image",
+    "video",
     "editor.js",
     "editorjs"
   ],
-  "description": "Image Tool for Editor.js",
+  "description": "Image and Video Tool for Editor.js",
   "license": "MIT",
-  "repository": "https://github.com/editor-js/image",
+  "repository": "https://github.com/sfrancavilla/editor-js-media",
   "files": [
     "dist"
   ],
