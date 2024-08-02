@@ -13,7 +13,7 @@
   "files": [
     "dist"
   ],
-  "master": "./dist/image.umd.js",
+  "main": "./dist/image.umd.js",
   "module": "./dist/image.mjs",
   "types": "dist/index.d.ts",
   "exports": {
