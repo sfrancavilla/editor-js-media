@@ -194,14 +194,23 @@ export default class Ui {
   }
 
   /**
+   * Shows a video or image
+   * @param url - video or image source
+   */
+  private getTag(url: string): string {
+    const videoFormats = /\.(mp4|ogg|webm|avi|mov|wmv|flv|mkv|m4v)/i;
+    return videoFormats.test(url) ? 'VIDEO' : 'IMG';
+}
+
+  /**
    * Shows an image
    * @param url - image source
    */
   public fillImage(url: string): void {
     /**
-     * Check for a source extension to compose element correctly: video tag for mp4, img — for others
+     * Check for a source extension to compose element correctly
      */
-    const tag = /\.mp4$/.test(url) ? 'VIDEO' : 'IMG';
+    const tag = this.getTag(url);
 
     const attributes: { [key: string]: string | boolean } = {
       src: url,
