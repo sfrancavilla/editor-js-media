@@ -230,10 +230,7 @@ export default class Ui {
       /**
        * Add attributes for playing muted mp4 as a gif
        */
-      attributes.autoplay = true;
-      attributes.loop = true;
-      attributes.muted = true;
-      attributes.playsinline = true;
+      attributes.controls = true;
 
       /**
        * Change event to be listened
